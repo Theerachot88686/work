@@ -245,5 +245,22 @@ body {
     justify-content: center;
 }
 
-  
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 40%; /* ปรับตำแหน่งข้อความให้ขยับขึ้นไปยังตำแหน่งที่ต้องการ */
+    left: 0%; /* จัดตำแหน่งข้อความที่ชิดซ้าย */
+    transform: translate(0, -50%); /* แก้ปัญหาข้อความไม่แสดงตรงกลางภาพ */
+    color: white; /* กำหนดสีข้อความใน card-text เป็นสีขาว */
+    text-align: center; /* จัดให้ข้อความอยู่ตรงกลางแนวนอน */
+    padding: 0px 20px; /* เพิ่มช่องว่างด้านซ้ายและขวาของข้อความ */
+    width: 100%; /* กำหนดความกว้างของข้อความให้เต็มกว้างของพื้นที่ของ .text-overlay */
+    box-sizing: border-box; /* ให้ padding และ border นับเข้าไปในความกว้างของ .text-overlay */
+}
+
+
   
